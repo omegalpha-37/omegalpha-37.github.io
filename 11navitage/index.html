@@ -3,7 +3,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | omega</title>
+    <title> | omega</title>
     <meta name="author" content="维纳斯" />
     <meta name="description" content="alpha的终结" />
     <meta name="keywords" content="" />
@@ -45,7 +45,9 @@
 
 
 
-<script src="/js/lib/search.js"></script>
+
+
+
 
 
 
@@ -157,63 +159,43 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
-            
-<div id="archives">
-    
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
-    
-    <div id="timeline-wrap" ref="timeline">
+            <div class="article">
+    <div>
+        <h1></h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/12/8
+        </span>
         
-        <div class="timeline" data-title="helloworld">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/12/7</div>
-                <a href="/2024/12/07/hello-world/">
-                    <h3>Hello World</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="第一篇文章">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/12/8</div>
-                <a href="/2024/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/">
-                    <h3>第一篇文章</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="观京城妓女有感">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/12/15</div>
-                <a href="/2024/12/15/%E8%A7%82%E3%80%8A%E4%BA%AC%E5%9F%8E%E5%A6%93%E5%A5%B3%E3%80%8B%E6%9C%89%E6%84%9F/">
-                    <h3>观京城妓女有感</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                </div>
-            </div>
-        </div>
         
     </div>
+    
+    <div class="content" v-pre>
+        <p>menu:<br>    home:<br>        name: 博客<br>        theme: solid<br>        link: &#x2F;<br>    about:<br>        name: 关于<br>        theme: solid<br>        link: &#x2F;about<br>    archives:<br>        name: 归档<br>        theme: solid<br>        link: &#x2F;archives<br>    categories:<br>        name: 分类<br>        theme: solid<br>        link: &#x2F;categories<br>    tags:<br>        name: 标签<br>        theme: solid<br>        link: &#x2F;tags</p>
+
+    </div>
+    
+    
+    
+    
+    <div id="comment">
+        <div id="giscus-container" class="giscus"></div>
+    </div>
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
     <div id="footer-wrap">
         <div>
             &copy;
-            2024 - 2024 omega
+            2024 - 2025 omega
             <span id="footer-icon">
                 <i class="fa-solid fa-font-awesome fa-fw"></i>
             </span>
@@ -237,6 +219,29 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+<script
+    src="https://giscus.app/client.js"
+    data-repo="omegalpha-37/comment"
+    data-repo-id="R_kgDONamnGA"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONamnGM4ClCUn"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="preferred_color_scheme"
+    data-lang="zh-CN"
+    crossorigin
+    async
+></script>
+
+
+
+
+
     
 </body>
 </html>
